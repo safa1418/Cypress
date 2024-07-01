@@ -4,7 +4,7 @@ import 'cypress-file-upload';
 describe('doit faire un test sur le site paruvendu', () =>{
     beforeEach(function() {
 
-        // avant chaque test 
+        //Avant chaque test 
       // Aller sur le site 
         cy.visit(Cypress.env('baseUrl'));
           // API à attendre
