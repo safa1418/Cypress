@@ -9,7 +9,7 @@ describe('doit faire un test sur le site paruvendu', () =>{
         cy.visit(Cypress.env('baseUrl'));
           // API à attendre
     cy.intercept('POST', '/communfo/utilisateurparticulierfo/ajax/acceptercookie').as('acceptercookie'); 
-    cy.intercept('GET', '/web/index.php/api/v2/dashboard/employees/subunit').as('subunitEmployees'); 
+    //cy.intercept('GET', '/web/index.php/api/v2/dashboard/employees/subunit').as('subunitEmployees'); 
     cy.intercept('GET', '/web/index.php/api/v2/dashboard/employees/locations').as('locationsEmployees'); 
     cy.intercept('GET', '/web/index.php/api/v2/admin/*').as('admin'); 
     cy.intercept('GET', '/web/index.php/api/v2/pim/*').as('Employees')
