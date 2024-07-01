@@ -7,5 +7,11 @@ describe('doit tester les differentes commandes git', () =>{
     // avant chaque test 
       // Aller sur le site 
         cy.visit(Cypress.env('baseUrl')); 
+
+        // git add
+        // git add .
+        // git commit -m "message"
+        // git status
+        // git log 
 })
 });
